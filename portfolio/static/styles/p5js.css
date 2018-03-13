@@ -1,0 +1,46 @@
+.firstContent {
+  background-color: #FFF;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 2% 5%;
+  margin-top: 2%;
+}
+
+.secondContent {
+  background-color: #FFF;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 2% 5%;
+  margin-top: 2%;
+}
+
+.lastContent {
+  background-color: #FFF;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 2% 5%;
+  margin-top: 2%;
+}
+
+
+
+@media only screen and (min-width: 150px) and (max-width: 800px)
+{
+  .firstContent {
+    margin-bottom: 4%;
+  }
+
+  .secondContent {
+    margin-top: 3%;
+    margin-bottom: 4%;
+  }
+
+  .lastContent {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/default.css' %}"/>
+</head>
+<body class="body">
+    <header class="mainHeader">
+      <img src="{% static 'img/logo.gif' %}">
+      <nav><ul>
+          {% load lineage %}
+          {% url '/' as url %}
+          <li class="{% ancestor '/home/' %}"><a href="/home/">Home</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="https://github.com/randoromm?tab=repositories">GitHub</a></li>
+          <li class="{% ancestor '/p5js/' %}"><a href="/p5js/">P5 JS</a></li>
+          <li><a href="/contact/">Contact</a></li>
+      </ul></nav>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="mainFooter">
+      <p>Copyright &copy; 2017 Rando Rommot.</p>
+    </footer>
+</body>
+</html>

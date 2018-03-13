@@ -19,5 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),  # Admin.site is just another app
     url(r'^webapp/', include('webapp.urls')),  # When ever someone accesses .../webapp/ include/consult webapp.urls
-    url(r'^&', include('portfolio.urls')),
+    url(r'^', include('portfolio.urls')),
 ]

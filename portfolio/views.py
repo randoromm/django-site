@@ -1,5 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import redirect
 
 def index(request):
-    return HttpResponse("<h2>Portfolio ayy</h2>")
+    return redirect('/home/')
+
+def home(request):
+    return render(request, 'portfolio/home.html')
+
+def p5js(request):
+    return render(request, 'portfolio/p5js.html')

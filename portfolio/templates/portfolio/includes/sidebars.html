@@ -1,0 +1,23 @@
+{% load staticfiles %}
+{% block content %}
+    <aside class="top-sidebar">
+      <h2>How about drums?</h2>
+      <a href="https://www.youtube.com/watch?v=IP9Wh_g1-yE">
+        <img src="{% static 'img/drums.jpg' %}">
+      </a>
+    </aside>
+
+    <aside class="middle-sidebar">
+      <h2>High F Sharp</h2>
+      <a href="https://www.youtube.com/watch?v=0ZMc9xrehxA">
+        <img src="{% static 'img/fsharp.png' %}">
+      </a>
+    </aside>
+
+    <aside class="bottom-sidebar">
+      <h2>Sakawa boys</h2>
+      <a href="https://www.youtube.com/watch?v=o26Eks801oc">
+        <img src="{% static 'img/sakawaboys.jpg' %}">
+      </a>
+    </aside>
+{% endblock %}
